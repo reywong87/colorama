@@ -1,0 +1,437 @@
+
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="m-ayudaLabel">AYUDA</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row" role="tabpanel">
+                    <!--NAV TABS-->
+                    <nav class="col-xs-3">
+                        <ul role="tablist" class="nav nav-pills nav-stacked">
+                            <!--INTRODUCCION-->
+                            <li role="presentation" class="active"><a id="first" class="index" href="#intro" aria-controls="intro" role="tab" data-toggle="tab">INTRODUCCIÓN</a></li>
+                            <li id="e-requisitos" class="hide-subindex"><a class="subindex" href="#requisitos" aria-controls="requisitos" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-menu-right"></span> Requisitos</a></li>
+                            <li id="e-acerca" class="hide-subindex"><a class="subindex" href="#acerca" aria-controls="acerca" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-menu-right"></span> Acerca de</a></li>
+                            <li id="e-condiciones" class="hide-subindex"><a class="subindex" href="#condiciones" aria-controls="acerca" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-menu-right"></span> Condiciones de Uso</a></li>
+                            <!--PROPIEDADES DEL COLOR-->
+                            <li role="presentation"><a class="index" href="#propiedades" aria-controls="propiedades" role="tab" data-toggle="tab">PROPIEDADES DEL COLOR</a></li>
+                            <li id="e-tinte" class="hide-subindex" role="presentation"><a class="subindex" href="#tinte" aria-controls="tinte" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-menu-right"></span> Tinte</a></li>
+                            <li id="e-saturacion" class="hide-subindex" role="presentation"><a class="subindex" href="#saturacion" aria-controls="saturacion" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-menu-right"></span> Saturación</a></li>
+                            <li id="e-claridad" class="hide-subindex" role="presentation"><a class="subindex" href="#claridad" aria-controls="claridad" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-menu-right"></span> Claridad</a></li>
+                            <!--INTERFAZ DE USUARIO-->
+                            <li role="presentation"><a class="index" href="#interfaz" aria-controls="interfaz" role="tab" data-toggle="tab">INTERFAZ</a></li>
+                            <li id="e-rueda" class="hide-subindex" role="presentation"><a class="subindex" href="#rueda" aria-controls="rueda" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-menu-right"></span> Rueda de colores</a></li>
+                            <li id="e-triangulo" class="hide-subindex" role="presentation"><a class="subindex" href="#trian-ayuda" aria-controls="trian-ayuda" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-menu-right"></span> Triángulo</a></li>
+                            <li id="e-paleta" class="hide-subindex" role="presentation"><a class="subindex" href="#paleta-ayuda" aria-controls="paleta-ayuda" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-menu-right"></span> Contenedor</a></li>
+
+                            <li id="e-preferencias" class="index hide-subindex" role="presentation"><span class="glyphicon glyphicon-menu-right"></span> Preferencias </li>
+                            <li id="e-tema" class="hide-subindex" role="presentation"><a class="subindex" href="#s-tema" aria-controls="tema" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-minus"></span><span class="glyphicon glyphicon-menu-right"></span> Tema</a></li>
+                            <li id="e-colores" class="hide-subindex" role="presentation"><a class="subindex" href="#colores" aria-controls="colores" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-minus"></span><span class="glyphicon glyphicon-menu-right"></span> Cant. Colores</a></li>
+                            <li id="e-tipo-rueda" class="hide-subindex" role="presentation"><a class="subindex" href="#tipo-rueda" aria-controls="tema" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-minus"></span><span class="glyphicon glyphicon-menu-right"></span> Tipo de Rueda</a></li>
+                            <!--RELACION DE LAS PROP. DEL COLOR-->
+                            <li role="presentation"><a class="index" href="#r-p-color" aria-controls="r-p-color" role="tab" data-toggle="tab">RELACIÓN PROP. COLOR</a></li>
+                            <li id="e-igual-c-s" class="hide-subindex" role="presentation"><a class="subindex" href="#igual-c-s" aria-controls="igual-c-s" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-menu-right"></span> Igual claridad y saturación</a></li>
+                            <li id="e-igual-c" class="hide-subindex" role="presentation"><a class="subindex" href="#igual-c" aria-controls="igual-c" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-menu-right"></span> Igual claridad y diferente saturación</a></li>
+                            <li id="e-igual-s" class="hide-subindex" role="presentation"><a class="subindex" href="#igual-s" aria-controls="igual-s" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-menu-right"></span>  Igual saturación y diferente claridad</a></li>
+                            <li id="e-dif-c-s" class="hide-subindex" role="presentation"><a class="subindex" href="#dif-c-s" aria-controls="dif-c-s" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-menu-right"></span> Diferente claridad y saturación</a></li>
+                            <!--TRABAJANDO CON COLORAMA-->
+                            <li role="presentation"><a class="index" href="#trabajando" aria-controls="trabajando" role="tab" data-toggle="tab">TRABAJANDO CON COLORAMA</a></li>
+                            <li id="e-crear-paleta-color" class="index hide-subindex" role="presentation"><span class="glyphicon glyphicon-menu-right"></span> Crear una paleta de colores </li>
+                            <li id="e-paso1" class="hide-subindex" role="presentation"><a class="subindex" href="#paso1" aria-controls="paso1" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-minus"></span><span class="glyphicon glyphicon-menu-right"></span> Paso 1</a></li>
+                            <li id="e-paso2" class="hide-subindex" role="presentation"><a class="subindex" href="#paso2" aria-controls="paso2" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-minus"></span><span class="glyphicon glyphicon-menu-right"></span> Paso 2</a></li>
+                            <li id="e-paso3" class="hide-subindex" role="presentation"><a class="subindex" href="#paso3" aria-controls="paso3" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-minus"></span><span class="glyphicon glyphicon-menu-right"></span> Paso 3</a></li>
+                            <li id="e-paso4" class="hide-subindex" role="presentation"><a class="subindex" href="#paso4" aria-controls="paso4" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-minus"></span><span class="glyphicon glyphicon-menu-right"></span> Paso 4</a></li>
+                            <li id="e-paso5" class="hide-subindex" role="presentation"><a class="subindex" href="#paso5" aria-controls="paso5" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-minus"></span><span class="glyphicon glyphicon-menu-right"></span> Paso 5</a></li>
+                            <!--BUSCAR COLOR EXTERNO-->
+                            <li role="presentation"><a class="index" href="#b-color-ext" aria-controls="b-color-ext" role="tab" data-toggle="tab">BUSCAR COLOR EXTERNO</a></li>
+                            <li id="e-paso1-ext" class="hide-subindex" role="presentation"><a class="subindex" href="#paso1-ext" aria-controls="paso1-ext" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-menu-right"></span> Paso 1</a></li>
+                            <li id="e-paso2-ext" class="hide-subindex" role="presentation"><a class="subindex" href="#paso2-ext" aria-controls="paso2-ext" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-menu-right"></span> Paso 2</a></li>
+                            <li id="e-paso3-ext" class="hide-subindex" role="presentation"><a class="subindex" href="#paso3-ext" aria-controls="paso3-ext" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-menu-right"></span> Paso 3</a></li>
+                            <li id="e-resultado-ext" class="hide-subindex" role="presentation"><a class="subindex" href="#resultado-ext" aria-controls="resultado-ext" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-menu-right"></span> Resultado</a></li>
+                        </ul>
+                    </nav>
+                    <!--TAB PANEL-->
+                    <section class="tab-content col-xs-9">
+                        <!--=============================INTRO-->
+                        <div role="tabpanel" class="tab-pane active" id="intro">
+                            <div>
+                                <header>
+                                    <h4>¿Qué es COLORAMA?</h4>
+                                </header>
+                                <section>
+                                    <p> COLORAMA es una aplicación con la cual se pueden crear paletas de colores empleando las propiedades del color: tinte, saturación y claridad.</p>
+                                </section>
+                                <header>
+                                    <h4>¿Qué hace COLORAMA?</h4>
+                                </header>
+                                <section>
+                                    <p> COLORAMA crea armonías de colores mediante la claridad y saturación específica de cada color.</p>
+                                </section>
+                            </div>
+                        </div>
+                        <!--REQUISITOS-->
+                        <div role="tabpanel" class="tab-pane" id="requisitos">
+                            <header>
+                                <h4>Requisitos funcionales</h4>
+                            </header>
+                            <section>
+                                <p>Para utilizar COLORAMA desde Internet necesita:<br>
+                                    -Un navegador que soporte las tecnologías de HTML5 y CSS3.<br>
+                                    -Tener activado JAVASCRIPT en el navegador.<br>
+                                    -Acceder a la dirección <a href="http://www.colorama.wizardscompany.com">http://www.colorama.wizardscompany.com</a>
+                                </p>
+                                <p>Para utilizar COLORAMA desde un ordenador necesita:<br>
+                                    -En PC: Window 7 (32 ó 64 bit) o posterior.<br>
+                                    -En Mac: Mac OS X 10.6.0 o posterior.<br>
+                                    -Minímo 80 mb de espacio en disco para ambos casos.
+                                </p>
+                            </section>
+                        </div>
+                        <!--ACERCA DE-->
+                        <div role="tabpanel" class="tab-pane" id="acerca">
+                            <header>
+                                <h4>Acerca de</h4>
+                            </header>
+                            <section>
+                                <img src="img/logo-colorama.png">
+                            </section>
+                            <section>
+                                <p>Versión: 1.1.1</p>
+                            </section>
+                            <section>
+                                <p>En esta versión se mejora el rendimiento de la aplicación corrigiendo algunos errores:</p>
+                                <ul>
+                                    <li>Error que cambiaba la claridad del color 255,0,0 al seleccionar un tipo de rueda.</li>
+                                    <li>El botón COPY ahora solo copia el valor sin el símbolo #, mejorando el uso en otras aplicaciones.</li>
+                                    <li>Se elimina el scroll de la ventana general que aparecía cuando se activaba la Ayuda en la aplicación de escritorio .</li>
+                                    <li>Se corrige un error que escondía las Condiciones de Uso en la ventana Ayuda.</li>
+                                </ul>
+                            </section>
+                            <section>
+                                <p>Versión: 1.1</p>
+                                <p>Copyright © 2015-2016, Reydel Pérez Wong</p>
+                            </section>
+                            <section>
+                                <p>En esta versión:</p>
+                                <ul>
+                                    <li>Se mejoró el rendimiento de la aplicación online.</li>
+                                    <li>Se agregó en el panel "Valores del color" los valores TCS (Tinte, Claridad, Saturación) para cada color.</li>
+                                    <li>Se agregó el área de trabajo "Paleta de colores".</li>
+                                    <li>Se recalcularon los valores de claridades de los colores puros para mejorar y optimizar la aplicación.</li>
+                                    <li>Se añadió el botón COPY que permite copiar al portapapeles el valor decimal del color. </li>
+                                </ul>
+                            </section>
+                        </div>
+                        <!--CONDICIONES DE USO-->
+                        <div role="tabpanel" class="tab-pane" id="condiciones">
+                            <header>
+                                <h4>Condiciones de Uso</h4>
+                            </header>
+                            <section>
+                                <p>Por favor lea detenidamente los siguientes términos antes de usar COLORAMA. <br> Para usar COLORAMA usted estará de acuerdo con aceptar las condiciones proporcionadas por el equipo de Wizards. En caso de no estarlo usted no deberá utilizar o descargar COLORAMA</p>
+                                <p>Términos y condiciones:</p>
+                                <p>1-COLORAMA es el resultado de la propiedad intelectual del equipo de Wizards y está protegido por el Centro Nacional del Derecho de Autor (CENDA).</p>
+                                <p>2-COLORAMA y todos sus archivos están registrados por el CENDA con el número 3020-08-2015.</p>
+                                <p>3-COLORAMA es una aplicación gratuita. Usted no tiene que pagar para utilizarla.</p>
+                                <p>4-Usted no tiene permitido vender, alquilar o utlizar COLORAMA para fines comerciales.</p>
+                                <p>5-COLORAMA y sus componentes no pueden ser usados como parte de ninguna otra aplicación.</p>
+                            </section>
+                        </div>
+                        <!--=================PROPIEDADES DEL COLOR-->
+                        <div role="tabpanel" class="tab-pane" id="propiedades">
+                            <section>
+                                <header>
+                                    <h4>Tinte</h4>
+                                </header>
+                                <p>Se refiere al estado puro del color. Los colores de la circunferencia cromática son puros; estos no contienen blanco, negro o gris. </p>
+                            </section>
+                            <section>
+                                <header>
+                                    <h4>Saturación</h4>
+                                </header>
+                                <p>Cantidad de croma que posee un color. Cuando el color es puro tiene 100% de saturación.</p>
+                            </section>
+                            <section>
+                                <header>
+                                    <h4>Claridad</h4>
+                                </header>
+                                <p>Se refiere a la cantidad de luz percibida y la cantidad de luz que refleja un color.</p>
+                            </section>
+                            <section>
+                                <p><a target="_blank" href="http://www.proyectacolor.cl/teoria-de-los-colores/propiedades-de-los-colores/">Leer más sobre el tema...</a> </p>
+                            </section>
+                        </div>
+                        <!--TINTE-->
+                        <div role="tabpanel" class="tab-pane" id="tinte">
+                            <header>
+                                <h4>Tinte en COLORAMA</h4>
+                            </header>
+                            <section>
+                                <p>COLORAMA cuenta con 108 tintes. Cada tinte presenta 118 colores, los cuales al mezclarse con blanco y negro generan un total de 12 744 colores.</p>
+                            </section>
+                        </div>
+                        <!--SATURACION-->
+                        <div role="tabpanel" class="tab-pane" id="saturacion">
+                            <header>
+                                <h4>Saturación en COLORAMA</h4>
+                            </header>
+                            <section>
+                                <p>La saturación en COLORAMA se basa en el <a target="_blank" href="http://es.ccm.net/contents/727-codigo-hsl">modelo de color HSL</a>. Esta va desde el color más saturado hasta el gris equivalente, lo cual es más instuitivo y adecuado para las artes gráficas.</p>
+                                <section><img src="img/saturacion.gif" alt="claridades-colores" class="img-responsive"></section>
+                            </section>
+                        </div>
+                        <!--CLARIDADES-->
+                        <div role="tabpanel" class="tab-pane" id="claridad">
+                            <header>
+                                <h4>Claridad en COLORAMA</h4>
+                            </header>
+                            <section>
+                                <p>COLORAMA toma de referencia la teoría de <a target="_blank" href="http://www.proyectacolor.cl/aplicacion-del-color/modelos-de-color/el-arbol-de-munsell/">Albert Henry Munsell</a> donde a cada tinte o color puro le corresponde una claridad específica. Las claridades son calculadas a partir del <a target="_blank" href="https://es.wikipedia.org/wiki/YIQ">Modelo YIQ</a>, lo cual permite una mejor percepción de la claridad de cada color.</p>
+                                <section><img src="img/grafica-claridades.png" alt="claridades-colores" class="img-responsive"></section>
+                            </section>
+                        </div>
+                        <!--==================INTERFAZ-->
+                        <div role="tabpanel" class="tab-pane" id="interfaz">
+                            <header>
+                                <h4>Interfaz de usuario</h4>
+                            </header>
+                            <section>
+                                <section><img src="img/interfaz.jpg" alt="claridades-colores" class="img-responsive"></section>
+                            </section>
+                        </div>
+                        <!--RUEDA-->
+                        <div role="tabpanel" class="tab-pane" id="rueda">
+                            <header>
+                                <h4>Rueda de colores</h4>
+                            </header>
+                            <section>
+                                <p>La rueda o circunferencia cromática presenta por defecto 12 tintes. En ella se representan las claridades y los ángulos de cada uno. En su centro, la rueda tiene un menú desplegable para crear armonía de color.</p>
+                                <section><img src="img/rueda.gif" alt="rueda-colores" class="img-responsive"></section>
+                            </section>
+                        </div>
+                        <!--TRIANGULO-->
+                        <div role="tabpanel" class="tab-pane" id="trian-ayuda">
+                            <header>
+                                <h4>Triángulo Monocromático</h4>
+                            </header>
+                            <section>
+                                <p>Cada color puro presenta una variación al blanco y al negro, generando 118 colores además del blanco y el negro que suman 121 colores en total. Los colores se representan por un triángulo monocromático basado en el <a target="_blank" href="http://es.ccm.net/contents/727-codigo-hsl">modelo de color HSL</a> y en la teoría de <a target="_blank" href="http://www.proyectacolor.cl/aplicacion-del-color/modelos-de-color/el-arbol-de-munsell/">Albert Henry Munsell</a> , donde la claridad varía en la vertical y la saturación en la horizontal. Cada color se identifica con un único valor de claridad y saturación.</p>
+                                <section><img src="img/triangulo.gif" alt="triangulo monocromático" class="img-responsive"></section>
+                            </section>
+                        </div>
+                        <!--PALETAS-->
+                        <div role="tabpanel" class="tab-pane" id="paleta-ayuda">
+                            <header>
+                                <h4>Contenedor de paletas</h4>
+                            </header>
+                            <section>
+                                <p>El contenedor de paletas sirve para crear una paleta personalizada. En ella se pueden posicionar los colores, seleccionarlos, eliminarlos, copiar sus valores, etc. Es posible agregar todos los colores que se deseen. Se muestra información de los valores de cada color. Los valores TCS (Tinte, Claridad, Saturación) permiten encontrar con facilidad colores de otros tintes con semejantes cualidades.</p>
+                                <section><img src="img/contenedor-paleta.jpg" alt="contenedor de paleta de colores" class="img-responsive"></section>
+                            </section>
+                        </div>
+                        <!--=============PREFERENCIAS-->
+                        <!--TEMA-->
+                        <div role="tabpanel" class="tab-pane" id="s-tema">
+                            <header>
+                                <h4>Selección de tema</h4>
+                            </header>
+                            <section>
+                                <p>Permite elegir un tema para el espacio de trabajo. </p>
+                                <section><img src="img/tema.gif" alt="temas" class="img-responsive"></section>
+                            </section>
+                        </div>
+                        <!--CANTIDAD DE COLORES-->
+                        <div role="tabpanel" class="tab-pane" id="colores">
+                            <header>
+                                <h4>Cantidad de colores</h4>
+                            </header>
+                            <section>
+                                <p>Permite seleccionar una rueda de 12 ó 60 colores. En ambas se muestran las claridades y ángulos de cada tinte.</p>
+                                <section><img src="img/cant-colores.jpg" alt="cantidad de colores" class="img-responsive"></section>
+                            </section>
+                        </div>
+                        <!--TIPO DE RUEDA-->
+                        <div role="tabpanel" class="tab-pane" id="tipo-rueda">
+                            <header>
+                                <h4>Tipo de Rueda</h4>
+                            </header>
+                            <section>
+                                <p>COLORAMA tiene 2 tipos de ruedas:
+                                    <br>1-Artística: Está basada en el modelo de color RYB, donde los colores primarios son rojo, amarillo y azul. Suele utilizarse en las artes visuales y diseño gráfico.
+                                    <br>2-Científica: Está basada en el modelo de color RGB, donde los colores primarios son rojo, verde y azul. Suele utilizarse en el diseño para pantallas.
+                                </p>
+                                <p><a target="_blank" href="http://www.proyectacolor.cl/aplicacion-del-color/modelos-de-color/">Leer más sobre el tema...</a> </p>
+                                <section><img src="img/tipo-rueda.gif" alt="tipo de rueda" class="img-responsive"></section>
+                            </section>
+                        </div>
+                        <!--==========================REL PROP. COLOR-->
+                        <div role="tabpanel" class="tab-pane" id="r-p-color">
+                            <header>
+                                <h4>Relación entre las propiedades del color</h4>
+                            </header>
+                            <section>
+                                <p>Con COLORAMA se puede crear analogía entre tintes, claridades y saturaciones, ofreciendo así una gama más amplia de posibilidades para seleccionar una paleta de colores.</p>
+                                <p>Ejemplo: 2 tintes con notable diferencia de claridades, donde el verde será el color base. </p>
+                                <section><img src="img/tintes-complementarios.gif" alt="tintes complementarios" class="img-responsive"></section>
+                            </section>
+                        </div>
+                        <!--IGUAL CLARIDAD Y SATURACION-->
+                        <div role="tabpanel" class="tab-pane" id="igual-c-s">
+                            <header>
+                                <h4>Igual claridad y saturación</h4>
+                            </header>
+                            <section>
+                                <p>Al seleccionar un color al azar en el triángulo monocromático, se debe tener en cuenta sólo los valores de claridad y saturación. Luego esos valores deben buscarse en el triángulo del otro tinte. En caso de no hayar la claridad exacta, se toma el valor más cercano.</p>
+                                <section><img src="img/igual-cla-sat.jpg" alt="igual claridad y saturación" class="img-responsive"></section>
+                            </section>
+                        </div>
+                        <!--IGUAL CLARIDAD Y DIFERENTE SATURACION-->
+                        <div role="tabpanel" class="tab-pane" id="igual-c">
+                            <header>
+                                <h4>Igual claridad y diferente saturación</h4>
+                            </header>
+                            <section>
+                                <p>Mantener la misma claridad del color base y buscar una saturación diferente para el otro tinte.</p>
+                                <section><img src="img/igual-cla.jpg" alt="igual claridad" class="img-responsive"></section>
+                            </section>
+                        </div>
+                        <!--IGUAL SATURACION Y DIFERENTE CLARIDAD-->
+                        <div role="tabpanel" class="tab-pane" id="igual-s">
+                            <header>
+                                <h4>Igual saturación y diferente claridad</h4>
+                            </header>
+                            <section>
+                                <p>Mantener la misma saturación del color base y buscar una claridad diferente para el otro tinte.</p>
+                                <section><img src="img/igual-sat.jpg" alt="igual saturación" class="img-responsive"></section>
+                            </section>
+                        </div>
+                        <!--DIFERENTE SATURACION Y CLARIDAD-->
+                        <div role="tabpanel" class="tab-pane" id="dif-c-s">
+                            <header>
+                                <h4>Diferente saturación y claridad</h4>
+                            </header>
+                            <section>
+                                <p>Buscar una claridad y una saturación diferente a la del color base.</p>
+                                <section><img src="img/dif-cla-sat.jpg" alt="diferente claridad y saturación" class="img-responsive"></section>
+                            </section>
+                        </div>
+                        <!--===================TRABAJANDO CON COLORAMA-->
+                        <div role="tabpanel" class="tab-pane" id="trabajando">
+                            <header>
+                                <h4>Trabajando con COLORAMA</h4>
+                            </header>
+                            <section>
+                                <p>COLORAMA utiliza un color base para generar armonía de color. Este color o tinte base se localiza en la rueda de color. Por defecto aparece seleccionado el Rojo.</p>
+                            </section>
+                        </div>
+                        <!--PASO 1-->
+                        <div role="tabpanel" class="tab-pane" id="paso1">
+                            <header>
+                                <h4>Paso 1</h4>
+                            </header>
+                            <section>
+                                <p>Hacer doble click sobre un color de la rueda para hacerlo color base.</p>
+                                <section><img src="img/selec-color-base.gif" alt="seleccionar color base" class="img-responsive"></section>
+                            </section>
+                        </div>
+                        <!--PASO 2-->
+                        <div role="tabpanel" class="tab-pane" id="paso2">
+                            <header>
+                                <h4>Paso 2</h4>
+                            </header>
+                            <section>
+                                <p>Seleccionar una armonía de color.</p>
+                                <section><img src="img/selec-armonia.gif" alt="seleccionar armonía de color" class="img-responsive"></section>
+                            </section>
+                        </div>
+                        <!--PASO 3-->
+                        <div role="tabpanel" class="tab-pane" id="paso3">
+                            <header>
+                                <h4>Paso 3</h4>
+                            </header>
+                            <section>
+                                <p>Hacer click en un color de la armonía para ver los valores en el triángulo monocromático. Hacer doble click o arrastrar los colores del triángulo al "Contenedor de paleta".</p>
+                                <section><img src="img/ver-color-triang.jpg" alt="seleccionar armonía de color" class="img-responsive"></section>
+                            </section>
+                        </div>
+                        <!--PASO 4-->
+                        <div role="tabpanel" class="tab-pane" id="paso4">
+                            <header>
+                                <h4>Paso 4</h4>
+                            </header>
+                            <section>
+                                <p>Fijarse en los valores TCS (Tinte, Claridad, Saturación) del "Contenedor de paletas" para buscar colores con semejantes cualidades. Copiar el valor Hexadecimal haciendo click en "COPY" y pegarlo en un programa de edición.</p>
+                                <section><img src="img/copiar-color.jpg" alt="seleccionar y copiar valor del color" class="img-responsive"></section>
+                            </section>
+                        </div>
+                        <!--PASO 5-->
+                        <div role="tabpanel" class="tab-pane" id="paso5">
+                            <header>
+                                <h4>Paso 5</h4>
+                            </header>
+                            <section>
+                                <p>Ejemplo.</p>
+                                <section><img src="img/ejemplo-paleta.gif" alt="ejemplo de paleta" class="img-responsive"></section>
+                            </section>
+                        </div>
+                        <!--================BUSCAR COLOR EXTERNO-->
+                        <div role="tabpanel" class="tab-pane" id="b-color-ext">
+                            <header>
+                                <h4>Buscar color externo</h4>
+                            </header>
+                            <section>
+                                <p>COLORAMA cuenta con 12 744 colores. ¿Cómo crear una armonía de color si éste no se encuentra en la aplicación (programa)?</p>
+                                <p>¿Cómo extraer el color de la siguiente imagen?</p>
+                                <section><img src="img/img-ext-color.jpg" alt="imagen de ejemplo" class="img-responsive"></section>
+                            </section>
+                        </div>
+                        <!--PASO 1 COLOR EXTERNO-->
+                        <div role="tabpanel" class="tab-pane" id="paso1-ext">
+                            <header>
+                                <h4>Paso 1</h4>
+                            </header>
+                            <section>
+                                <p>En un programa de edición, seleccionar con el cuentagotas una zona de la imagen. Mirar en el panel de colores el ángulo del tinte.</p>
+                                <section><img src="img/selec-color-img.jpg" alt="selección de color a partir de imagen" class="img-responsive"></section>
+                            </section>
+                        </div>
+                        <!--PASO 2 COLOR EXTERNO-->
+                        <div role="tabpanel" class="tab-pane" id="paso2-ext">
+                            <header>
+                                <h4>Paso 2</h4>
+                            </header>
+                            <section>
+                                <p>Buscar en COLORAMA el ángulo del tinte. Si no aparece tomar el más cercano.</p>
+                                <section><img src="img/selec-grado.gif" alt="selección de grado" class="img-responsive"></section>
+                            </section>
+                        </div>
+                        <!--PASO 3 COLOR EXTERNO-->
+                        <div role="tabpanel" class="tab-pane" id="paso3-ext">
+                            <header>
+                                <h4>Paso 3</h4>
+                            </header>
+                            <section>
+                                <p>Localizar el color en el triángulo monocromático. Seleccionar el más cercano en caso de no aparecer el color exacto. Utilizar los valores RGB como referencia.</p>
+                                <section><img src="img/localizar-color.gif" alt="localizar color" class="img-responsive"></section>
+                            </section>
+                        </div>
+                        <!--RESULTADO-->
+                        <div role="tabpanel" class="tab-pane" id="resultado-ext">
+                            <header>
+                                <h4>RESULTADO</h4>
+                            </header>
+                            <section>
+                                <p>Se ha obtenido un color visualmente similar al de la imagen, a partir de la cual se podrá crear una paleta de colores personalizada.</p>
+                                <section><img src="img/comp-colores.gif" alt="comparación de colores" class="img-responsive"></section>
+                            </section>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default transparent" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
